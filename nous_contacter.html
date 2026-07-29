@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous Contacter : Elsass Vun Morn</title>
+    <link rel="stylesheet" href="css/elsass_vun_morn.css">
+    <link rel="stylesheet" href="css/elsass_vun_morn_header.css">
+    <link rel="stylesheet" href="css/elsass_vun_morn_footer.css">
+    <link rel="icon" type="image/png" href="image/elsass_vun_morn_logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+    <header id="site-header"></header>
+
+
+    <h1>ELSASS VUN MORN : <span class="saut"></span> NOUS CONTACTER</h1>
+    <section>
+        <div class="contact">
+            <h2>Contactez-nous :</h2>
+
+            <ul>
+                <li><a href="mailto:elsassvunmorn@gmail.com"><i class="bi bi-envelope-at-fill"></i> elsassvunmorn@gmail.com</a>
+                </li>
+                <li><a href="https://www.instagram.com/elsassvunmorn/?_pwa=1"><i class="bi bi-instagram"></i>
+                        Instagram</a></li>
+                <li><a href="https://chat.whatsapp.com/BEMrZXhcD8i3MW2Vk6JopR"><i class="bi bi-whatsapp"></i>
+                        Communauté WhatsApps</a></li>
+                <li><a href="https://discord.gg/NXRRhcgdJm"><i class="bi bi-discord"></i> Discord</a></li>
+                <li><i class="bi bi-telephone"></i> Non défini</li>
+                <li><i class="bi bi-geo-alt-fill"></i> Quelque part en Alsace</li>
+                <li><a href="https://www.youtube.com/@elsassvunmorn"><i class="bi bi-youtube"></i> Youtube</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="ecrire">
+
+        <h2>Ou envoyer nous un message ci-dessous :</h2><span class="saut"></span>
+        <form class="contact-form ecrire" onsubmit="return validateForm(event)">
+            <div class="form-group">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="name-error">Veuillez entrer votre nom</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="email-error">Veuillez entrer un email valide</span>
+            </div>
+            <div class="form-group">
+                <label for="message-form">Message :</label>
+                <textarea id="message-form" name="message" required></textarea>
+                <span class="error" id="message-error">Veuillez entrer un message</span>
+            </div>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+
+    </section>
+
+    <footer id="site-footer"></footer>
+    <script src="js/elsass_vun_morn.js"></script>
+</body>
+
+</html>

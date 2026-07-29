@@ -1,0 +1,352 @@
+body {
+    background-color: #e6e5dc;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-decoration: underline;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    img {
+        height: 200px;
+        float: right;
+        margin-right: 50px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    li {
+        margin-left: 15px;
+    }
+
+    .important {
+        text-transform: uppercase;
+        font-size: x-large;
+        color: red;
+    }
+
+    .actu {
+        text-align: right;
+    }
+
+    .logo {
+        height: 200px;
+        float: right;
+        margin-left: 10px;
+        vertical-align: middle;
+        border-radius: 10px;
+    }
+
+    .logo_contact {
+        height: 30px;
+        float: left;
+        margin-left: 10px;
+        vertical-align: middle;
+        border-radius: 10px;
+    }
+
+    h4 {
+        margin-left: 30px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        /* centré horizontalement */
+        align-items: center;
+        /* centré verticalement */
+        padding: 10px 20px;
+        background-color: #e6e5dc;
+        border-top: 1px solid #e6e5dc;
+        flex-direction: column;
+        /* empile les éléments au centre */
+        text-align: center;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Dropdown nav */
+    nav ul li {
+        position: relative;
+    }
+
+    .dropbtn {
+        background-color: rgb(181, 27, 27);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 100px;
+    }
+
+    .dropdown {
+        margin-left: 10px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 180px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        right: 0;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .dropdown-content a {
+        color: #111;
+        padding: 10px 12px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f0f0f0;
+    }
+
+    /* Nous Contacter - liste sans puces */
+    .contact ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact ul li {
+        margin: 8px 0;
+    }
+
+    .contact a {
+        text-decoration: none;
+    }
+
+    /* Formulaire - centrage et champs alignés */
+    .ecrire .contact-form {
+        max-width: 700px; /* réduit pour qu'ils ne soient plus trop larges */
+        margin: 20px auto;
+        padding-top: 6px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .ecrire .form-group {
+        max-width: 700px;
+        margin: 0 auto 18px;
+        position: relative;
+        width: 100%;
+    }
+
+    /* labels en flux normal (plus de absolute qui provoquait superposition) */
+    .ecrire label,
+    label {
+        position: static;
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    /* inputs et textarea prennent toute la largeur du conteneur (mêmes longueurs) */
+    .ecrire input,
+    .ecrire textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        box-sizing: border-box;
+        text-align: left;
+        max-width: 100%;
+    }
+
+    /* taille du textarea un peu plus grande en hauteur */
+    .ecrire textarea {
+        min-height: 160px;
+        resize: vertical;
+    }
+
+    /* supprimé règles contradictoires précédentes (max-width 500px ou position absolute) */
+
+    /* responsive : sur petits écrans, on garde 90% pour laisser des marges */
+    @media (max-width: 700px) {
+        .ecrire .contact-form {
+            width: 90%;
+            max-width: 700px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+    }
+
+    nav {
+        padding: 16px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: #ddd;
+    }
+
+    .main-content {
+        max-width: 800px;
+        margin: 32px auto;
+        padding: 0 16px;
+    }
+
+    .btn {
+        background-color: rgb(181, 27, 27);
+        font-size: 16px;
+        color: white;
+        padding: 12px 50px;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        text-align: center;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.02);
+    }
+
+    .contact-form {
+        width: 100%;
+        margin: 0;
+    }
+
+    .form-group {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 100px;
+        max-width: 500px;
+    }
+
+    textarea#message-form {
+        resize: vertical;
+        max-width: 700px;
+    }
+
+    .error {
+        color: red;
+        font-size: 14px;
+        display: none;
+    }
+
+    blockquote {
+        font-style: italic;
+        margin: 16px 0;
+        padding: 16px;
+        border-left: 4px solid #ccc;
+        background-color: #dcdbcd;
+        margin-right: 100px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: 14px;
+        display: block;
+        position: absolute;
+        margin-top: -15px;
+        margin-left: 10px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px 5px 0 0;
+        font-size: 14px;
+        box-sizing: border-box;
+        transition: all 200ms;
+    }
+
+    span.saut {
+        display: block;
+    }
+
+    @media (max-width: 700px) {
+        footer {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-right {
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+}
